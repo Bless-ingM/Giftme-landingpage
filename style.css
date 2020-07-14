@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    /* font-family:  sans-serif; */
+    font-family: 'El Messiri', sans-serif;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 4em;
+  }
+  header a{
+    text-decoration: none;
+    color: #000;
+  }
+
+  nav ul{
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+      
+  }
+  nav ul li{
+    margin-left: 1.875rem;
+  }
+  nav ul li a{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+  }
+  nav ul button{
+    margin-left: 30px;
+    background-color: #7209b7;
+    cursor: pointer;
+    padding: 0.7em 2em;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+section.soon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -4em;
+}
+section.soon h1{
+    font-size: 4rem;
+}
+section.soon .text{
+    display: flex;
+    flex-direction: column  ;
+    align-items: center;
+    margin-top: -9em;
+
+}
+section.soon h4{
+    margin-top: -3em;
+    font-size: 1rem;
+    text-align: center;
+}
+section.soon p{
+    color: #7209b7;
+}
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #888;
+    padding: 1em 5.5em;
+}
+form button{
+    background: #7209b7;
+    border: none;
+    color: #fff;
+    padding: 1em 3em;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
