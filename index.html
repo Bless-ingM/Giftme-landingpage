@@ -5,34 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giftme</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/eva-icons"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
   />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="index.html" class="animate__animated animate__backInDown"><h2>Giftme.</h2></a>
+        <a href="index.html" class="animate__animated animate__backInDown">
+          <h1 class="me">Giftme.</h1>
+          <img src="/imgs/gift.png" alt="" class="gift">
+        </a>
         <nav>
           <!-- <button class="ham" id="hamb">
             <img class="icon-ham" src="assets/images/icon-hamburger.svg" alt="" />
             <img class="icon-close" src="assets/images/icon-close.svg" alt="" />
           </button> -->
   
-          <ul>
+          <!-- <ul>
             <li><a href="#">Recipient</a></li>
             <li><a href="#">occassion</a></li>
             <li><a href="#">About</a></li>
             <button type="button" class="btn1">log in</button>
             <button type="button" class="btn2">sign up</button>
           </ul>
-        </nav>
+        </nav> -->
       </header>
 
       <section >
           <div class="img-box">
-              <img src="./imgs/Rectangle 13.png " alt="" class=" animate__animated animate__swing animate__infinite	">
-              <img src="./imgs/Rectangle 13.png " alt="" class=" animate__animated  animate__swing animate__infinite">
+              <img src="./imgs/Rectangle 13.png " alt="" class=" giftbox animate__animated animate__swing animate__infinite	">
+              <img src="./imgs/Rectangle 13.png " alt="" class=" giftbox giftbox2 animate__animated  animate__swing animate__infinite">
           </div>
       </section>
 
@@ -41,32 +49,109 @@
             <h1 class="animate__animated animate__zoomInRight animate__delay-2s">
                 Opening Soon
               </h1>
-              <h4 class="animate__animated animate__bounce">
-                Let us help you find the perfect gift for him or her based on their personalitiy
-              </h4>
+              <h5 class="animate__animated animate__bounce">
+                Let us help you find the perfect gift for him or her <br> based on their personalitiy
+              </h5>
               <p class="animate__animated animate__bounce">
                 Be the first to know when we are open
               </p>
-              <form action="">
+              <form action="index.php" method="POST">
                 <div>
-                    <input type="email" placeholder="Enter your email address......." class="animate__animated animate__lightSpeedInLeft animate__delay-1s">
-                    <button type="submit" class="animate__animated animate__jackInTheBox animate__delay-2s">Send</button>
+                    <input type="email" name="email" placeholder="Enter your email address.." class="animate__animated animate__lightSpeedInLeft animate__delay-1s">
+                    <button type="submit"  name="submit" value="subimt" class="animate__animated animate__jackInTheBox animate__delay-2s">Send</button>
                 </div>
             </form>
           </div>
-          <div>
-              <img src="./imgs/Rectangle 18.png " alt="" class="animate__animated animate__fadeInRight animate__delay-3s">
+          <div class="">
+              <img src="./imgs/Rectangle 18.png " alt="" class="girls animate__animated animate__fadeInRight animate__delay-3s">
           </div>
       </section>
-      <section>
-        
-      </section>
-      <footer>
-           <span>
-            <i data-eva="facebook"></i>
-            <i data-eva="behance"></i>
-            <i data-eva="github"></i>
+      <!-- modal full image preview -->
+     <section>
+       <div class="container" w-100 h-100>
+         <div class="py-4 ">
+           <h1 class="text-uppercase text-center display-4">Site Showcase</h1>
+           <hr class="text-center w-25 border-dark">
+          </div>
+          <!-- row start -->
+          <div class="row gutter gallerys">
+
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="col-lg-4 col-md-4 col-sm-6 col-12 slide my-3  ">
+            <a href="./imgs/home.png" target="_blank">
+              <img src="./imgs/home.png" alt="" class="img-fluid " >
+            </a>
+          </div>
+
+          <div data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="2500" class="col-lg-4 col-md-4 col-sm-6 col-12 slide my-3">
+            <a href="./imgs/Page3.png" target="_blank">
+              <img src="./imgs/Page3.png" alt="" class="img-fluid">
+            </a>
+          </div>
+
+          <div data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"   class="col-lg-4 col-md-4 col-sm-6 col-12 slide my-3">
+            <a href="./imgs/Page 4.png" target="_blank">
+              <img src="./imgs/Page 4.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="col-lg-4 col-md-4 col-sm-6 col-12 slide my-3">
+            <a href="./imgs/Page 5.png" target="_blank">
+              <img src="./imgs/Page 5.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="2500" class="col-lg-4 col-md-4 col-sm-6 col-12 slide my-3">
+            <a href="./imgs/Page 6.png" target="_blank">
+              <img src="./imgs/Page 6.png" alt="" class="img-fluid">
+            </a>
+          </div>
+          <div data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000" class="col-lg-4 col-md-4 col-sm-6 col-12 slide my-3">
+            <a href="./imgs/home.png" target="_blank">
+              <img src="./imgs/home.png" alt="" class="img-fluid">
+            </a>
+          </div>
+
+          <!-- row end -->
+         </div>
+
+       </div>
+     </section>
+      <footer class="text-center py-4">
+           <span >
+             <i data-eva="facebook" data-eva-animation="shake" data-eva-hover="true"  ></i>
+             <i data-eva="twitter"  data-eva-animation="shake" data-eva-hover="true"  ></i>
+             <i data-eva="behance"  data-eva-animation="shake" data-eva-hover="true" "></i>
+           <hr class="text-center w-75 border-dark">
+             <p>&copy 2020. All rights reserved.</p>
           </span>
       </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous"></script>
+      <script>
+        eva.replace()
+        AOS.init();
+        $(document).ready(function() {
+    	    $('.gallerys').magnificPopup({
+            type:'image',
+            delegate: 'a',
+            gallery : {
+              enabled :true
+            }
+          });
+         });
+      </script>
 </body>
 </html>

@@ -1,81 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
     font-size: 1rem;
-    /* font-family:  sans-serif; */
     font-family: 'El Messiri', sans-serif;
+    position: relative;
   }
 
   header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1em 4em;
+   margin:  3em;
   }
   header a{
+    font-size: 1.1rem;
     text-decoration: none;
     color: #000;
   }
-
-  nav ul{
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        list-style-type: none;
-        padding: 0;
-      
-  }
-  nav ul li{
-    margin-left: 1.875rem;
-  }
-  nav ul li a{
+  header a h1{
     position: relative;
-    color: #000;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s ease;
   }
-  nav ul button{
-    margin-left: 30px;
-    background-color: #7209b7;
-    cursor: pointer;
-    padding: 0.7em 2em;
-    color: #fff;
-    border: none;
-    text-transform: uppercase;
-    border-radius: 20px;
-}
+  header a .gift{
+    position: absolute;
+    top: 2px;
+    left: 74px;
+    width: 15px;
+  }
 .img-box{
     display: flex;
     align-items: center;
-    justify-content: center;
-    z-index: 0;
+    z-index: -1;
+    
+  }
+  .giftbox {
+    width: 100%;
+    max-width: 600px;
+}
+.girls{
+  max-width: 600px;
+  width: 100%;
 }
 section.soon{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: -4em;
+    margin: -4em  1em 0 1em;
+    width: 100%;
+    max-width: 1200px;
 }
 section.soon h1{
-    font-size: 4rem;
+    font-size: 4.3rem;
+    padding-bottom: .5em;
 }
 section.soon .text{
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column ;
     align-items: center;
-    margin-top: -9em;
-
 }
-section.soon h4{
-    margin-top: -3em;
+section.soon h5{
     font-size: 1rem;
-    text-align: center;
-}
-section.soon p{
-    color: #7209b7;
+    
+  }
+  section.soon p{
+    
+    color: rgba(64, 17, 198, 0.78);;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 form{
     display: flex;
@@ -83,18 +75,182 @@ form{
     justify-content: center;
 }
 input{
-    border-radius: 20px;
+    border-radius: 50px;
     background-color: transparent;
     border: 1px solid #888;
-    padding: 1em 5.5em;
+    padding: 1em 4.5em;
+    margin-bottom: 1em;
 }
 form button{
-    background: #7209b7;
+    background: rgba(64, 17, 198, 0.78);
     border: none;
     color: #fff;
     padding: 1em 3em;
     cursor: pointer;
     outline: none;
-    border-radius: 20px;
+    border-radius: 50px;
     text-transform: uppercase;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer span i{
+  padding: 1em 1.5em;
+  
+}
+footer span p{
+  font-weight: bold;
+  color:  rgba(64, 17, 198, 0.78);
+}
+.slide {
+  /* background: #000; */
+  height: 400px;
+  overflow: hidden;
+}
+
+/*  */
+@media screen and (max-width:769px){
+  body{
+    margin: 0 1em;
+  }
+  section.soon{
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
+  }
+  section.soon h1{
+    margin: 2em 0 1em 0;
+    font-size: 3.5rem;
+  }
+  .girls{
+    max-width: 300px;
+  }
+  .giftbox{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .giftbox2{
+    display: none;
+  }
+}
+@media screen and (max-width:480px){
+  section.soon h1{
+    margin: 4em 0 1em 0;
+    font-size: 2.5rem;
+  }
+  form input{
+    width: 90%;
+    margin: 1em 0;
+  }
+  form button{
+    width: 90%;
+    padding: 1em 0;
+  }
+}
+
+
+
+/* polygon image slider */
+.services-section{
+  width: 100vw;
+  height: auto;
+  min-width: 100vh;
+  padding-bottom: 8rem;
+}
+.section-heading{
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  transform: translateY(80px);
+  height: auto;
+}
+
+.services-cell{
+  flex: 0 1 250px;
+  max-width: 200px;
+  height: 275px;
+  margin: 2px;
+  position: relative;
+  text-align: center;
+  background: rgba(0, 3, 12, 0.4);
+  z-index: 1;
+  box-shadow: 0px 8px 15px 9px rgba(0, 0, 0, .8);
+  cursor: pointer;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%,50% 100%,0% 75%,0% 25%);
+}
+.services-cell_img{
+  object-fit: cover;
+  object-position: center;
+}
+.services-cell_text{
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  color: red;
+  transform: opacity 350ms;
+  text-shadow: 2px 2px 2px red;
+}
+.services-cell::before,
+.services-cell::before,
+.services-cell_img{
+  content: "";
+  position: absolute;
+  /* display: block; */
+  top: -50px;
+  width: 100%;
+  height: 200%;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%,50% 100%,0% 75%,0% 25%);
+  z-index: -1;
+}
+.services-cell:hover{
+  opacity: 1;
+  transition: all .3s ease-in-out;
+  transform: scale(1.1);
+  z-index: 99;
+  overflow: hidden;
+}
+.services-cell::before{
+  content: '';
+  position: absolute;
+  opacity: .4;
+  width: 350px;
+  height: 70px;
+  background: #fff;
+  top: 50;
+  left: 0;
+  z-index: 1;
+  transform: rotate(45deg);
+  transition: transform 1.5s;
+}
+.services-cell:hover::before{
+  transform: translate(-100px, 600%) rotate(45deg);
+  transition: transform 0.5s;
+}
+
+
+/* full image previewer */
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 5px 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .8);
 }
